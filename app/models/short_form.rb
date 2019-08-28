@@ -1,0 +1,2 @@
+class ShortForm < ApplicationRecord
+end

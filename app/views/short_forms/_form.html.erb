@@ -1,0 +1,83 @@
+<div class="box">
+  <%= form_with(model: short_form, local: true) do |form| %>
+    <% if short_form.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(short_form.errors.count, "error") %> prohibited this short_form from being saved:</h2>
+
+        <ul>
+          <% short_form.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="columns">
+      <div class="column">
+        <div class="field">
+          <%= form.label :name, class: "label"%>
+          <%= form.text_field :name, class: "input" %>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="field">
+          <%= form.label :phone, class: "label" %>
+          <%= form.telephone_field :phone, class: "input" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <div class="field">
+          <%= form.label :parcel_street, class: "label" %>
+          <%= form.text_field :parcel_street, class: "input" %>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="field">
+          <%= form.label :parcel_street2, "Parcel street 2", class: "label" %>
+          <%= form.text_field :parcel_street2, class: "input" %>
+        </div>
+      </div>
+    </div>
+      
+    <div class="columns">
+      <div class="column">
+        <div class="field">
+          <%= form.label :parcel_city, class: "label" %>
+          <%= form.text_field :parcel_city, class: "input" %>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="field">
+          <%= form.label :parcel_zip, class: "label" %>
+          <%= form.text_field :parcel_zip, class: "input" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <div class="field">
+          <%= form.label :parcel_state, class: "label" %>
+          <%= form.text_field :parcel_state, class: "input" %>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="field">
+          <%= form.label :parcel_county, class: "label" %>
+          <%= form.text_field :parcel_county, class: "input" %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <%= form.submit "Contact Me!", class: "button is-primary"%>
+    </div>
+  <% end %>
+</div>
