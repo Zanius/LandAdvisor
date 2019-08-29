@@ -15,15 +15,25 @@
     <div class="columns">
       <div class="column">
         <div class="field">
-          <%= form.label :name, class: "label"%>
-          <%= form.text_field :name, class: "input" %>
+          <%= form.label :name, class: "label is-medium"%>
+          <div class="control has-icons-left">
+            <%= form.text_field :name, class: "input is-medium" %>
+            <span class="icon is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
         </div>
       </div>
 
       <div class="column">
         <div class="field">
-          <%= form.label :phone, class: "label" %>
-          <%= form.telephone_field :phone, class: "input" %>
+          <%= form.label :phone, class: "label is-medium" %>
+          <div class="control has-icons-left">
+            <%= form.telephone_field :phone, class: "input is-medium" %>
+            <span class="icon is-left">
+              <i class="fas fa-phone-alt"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -31,15 +41,25 @@
     <div class="columns">
       <div class="column">
         <div class="field">
-          <%= form.label :parcel_street, class: "label" %>
-          <%= form.text_field :parcel_street, class: "input" %>
+          <%= form.label :parcel_street, class: "label is-medium" %>
+          <div class="control has-icons-left">
+            <%= form.text_field :parcel_street, class: "input is-medium" %>
+            <span class="icon is-left">
+              <i class="fas fa-road"></i>
+            </span>
+          </div>
         </div>
       </div>
 
       <div class="column">
         <div class="field">
-          <%= form.label :parcel_street2, "Parcel street 2", class: "label" %>
-          <%= form.text_field :parcel_street2, class: "input" %>
+          <%= form.label :parcel_street2, "Parcel street 2", class: "label is-medium" %>
+          <div class="control has-icons-left">
+            <%= form.text_field :parcel_street2, class: "input is-medium" %>
+            <span class="icon is-left">
+              <i class="fas fa-road"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -47,15 +67,25 @@
     <div class="columns">
       <div class="column">
         <div class="field">
-          <%= form.label :parcel_city, class: "label" %>
-          <%= form.text_field :parcel_city, class: "input" %>
+          <%= form.label :parcel_city, class: "label is-medium" %>
+          <div class="control has-icons-left">
+            <%= form.text_field :parcel_city, class: "input is-medium" %>
+            <span class="icon is-left">
+              <i class="fas fa-city"></i>
+            </span>
+          </div>
         </div>
       </div>
 
       <div class="column">
         <div class="field">
-          <%= form.label :parcel_zip, class: "label" %>
-          <%= form.text_field :parcel_zip, class: "input" %>
+          <%= form.label :parcel_zip, class: "label is-medium" %>
+          <div class="control has-icons-left">
+            <%= form.text_field :parcel_zip, class: "input is-medium" %>
+            <span class="icon is-left">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -63,15 +93,27 @@
     <div class="columns">
       <div class="column">
         <div class="field">
-          <%= form.label :parcel_state, class: "label" %>
-          <%= form.text_field :parcel_state, class: "input" %>
+          <%= form.label :parcel_state, class: "label is-medium" %>
+          <div class="control has-icons-left">
+            <div class="select is-fullwidth is-medium">
+              <%= form.collection_select(:parcel_state, ShortForm.states, :last, :first) %>
+            </div>
+            <span class="icon is-left">
+              <i class="fas fa-flag-usa"></i>
+            </span>
+          </div>
         </div>
       </div>
 
       <div class="column">
         <div class="field">
-          <%= form.label :parcel_county, class: "label" %>
-          <%= form.text_field :parcel_county, class: "input" %>
+          <%= form.label :parcel_county, class: "label is-medium" %>
+          <div class="control has-icons-left">
+            <%= form.text_field :parcel_county, class: "input is-medium" %>
+            <span class="icon is-left">
+              <i class="fas fa-map-marked-alt"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -80,4 +122,4 @@
       <%= form.submit "Contact Me!", class: "button is-primary"%>
     </div>
   <% end %>
-</div>
+</div
