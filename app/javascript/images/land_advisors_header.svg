@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="489px" height="53px" viewBox="0 0 489 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="48.2575003%" y1="39.7422854%" x2="49.9597897%" y2="98.6094792%" id="linearGradient-1">
+            <stop stop-color="#B1F7D5" offset="0%"></stop>
+            <stop stop-color="#67E89F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-3.000000, -7.000000)">
+            <path d="M360.625,58.625 L307,58.625 L339.5,26.125 L366.3125,52.9375 L412.25,7 L464,58.75 L360.5,58.75 L360.625,58.625 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.674832589"></path>
+            <text id="LandAdvisors" font-family="Roboto-Regular, Roboto" font-size="48" font-weight="normal" letter-spacing="-0.5" fill="#343434">
+                <tspan x="0" y="45">Land</tspan>
+                <tspan x="103.492188" y="45" font-family="Roboto-Bold, Roboto" font-weight="bold">Advisor</tspan>
+                <tspan x="265.648438" y="45" font-family="Roboto-Bold, Roboto" font-weight="bold">s</tspan>
+            </text>
+            <path d="M8.3740329,55.9136647 C-18.8630082,55.9136647 78.4812231,55.9136647 300.406727,55.9136647 L327.602159,28.7182326 L354.797591,55.9136647 L397.711256,13 L440.62492,55.9136647 L491.36708,55.9136647" id="Path" stroke="#343434" stroke-width="5" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
