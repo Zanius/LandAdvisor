@@ -28,7 +28,7 @@ class ShortFormsController < ApplicationController
 
     respond_to do |format|
       if @short_form.save
-        format.html { redirect_to @short_form, notice: 'Short form was successfully created.' }
+        format.html { redirect_to action: :confirmation }
         format.json { render :show, status: :created, location: @short_form }
       else
         format.html { render :new }
@@ -59,6 +59,10 @@ class ShortFormsController < ApplicationController
       format.html { redirect_to short_forms_url, notice: 'Short form was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def confirmation
+
   end
 
   private
