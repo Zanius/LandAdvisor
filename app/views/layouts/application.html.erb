@@ -7,6 +7,18 @@
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag "application", 'data-turbolinks-track': 'reload' %>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 847852206 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-847852206"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-847852206');
+    </script>
+
+    <%= yield :head %>
   </head>
 
   <body>
