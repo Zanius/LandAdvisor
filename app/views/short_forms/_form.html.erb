@@ -98,7 +98,7 @@
           <%= form.label :parcel_state, class: "label is-medium" %>
           <div class="control has-icons-left">
             <div class="select is-fullwidth is-medium">
-              <%= form.collection_select(:parcel_state, ShortForm.states, :last, :first) %>
+              <%= form.collection_select(:parcel_state, ShortForm.states, :last, :first, include_blank: "Select a State") %>
             </div>
             <span class="icon is-left">
               <i class="fas fa-flag-usa"></i>

@@ -73,6 +73,7 @@ class ShortFormsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def short_form_params
-      params.require(:short_form).permit(:name, :phone, :parcel_street, :parcel_street2, :parcel_city, :parcel_zip, :parcel_county)
+      params.require(:short_form).permit(:name, :phone, :parcel_street, :parcel_street2, :parcel_city, 
+      :parcel_zip, :parcel_county, :parcel_state)
     end
 end
