@@ -3,11 +3,11 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  resources :short_forms, only: [:new, :create]
+
   authenticate :user do
     resources :short_forms, only: [:index, :show, :edit, :update, :destroy]
   end
-
-  resources :short_forms, only: [:new, :create]
 
   get '/confirmation', to: 'short_forms#confirmation'
 

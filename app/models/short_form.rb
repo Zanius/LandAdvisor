@@ -1,4 +1,12 @@
 class ShortForm < ApplicationRecord
+  validates :name, presence: true
+  validates :phone, presence: true
+  validates :parcel_street, presence: true
+  validates :parcel_city, presence: true
+  validates :parcel_zip, presence: true
+  validates :parcel_state, presence: true
+  validates :parcel_county, presence: true
+
   def self.states
     [
       ['Alabama', 'AL'],

@@ -3,8 +3,8 @@
 
   <%= form_with(model: short_form, local: true) do |form| %>
     <% if short_form.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(short_form.errors.count, "error") %> prohibited this short_form from being saved:</h2>
+      <div id="error_explanation" class="has-text-danger">
+        <h2 class="sub-title is-5 is-marginless"><%= pluralize(short_form.errors.count, "error") %> prohibited this short_form from being saved:</h2>
 
         <ul>
           <% short_form.errors.full_messages.each do |message| %>
