@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  resources :landing_pages, only: [:index]
+
   resources :short_forms, only: [:new, :create]
 
   authenticate :user do
