@@ -1,18 +1,21 @@
 Rails.application.routes.draw do
-  root 'short_forms#new'
+  root 'landing_pages#index'
 
   devise_for :users
 
   resources :landing_pages, only: [:index]
 
-  resources :short_forms, only: [:new, :create]
+  # resources :loans, only
+
+  # resources :leads, only: [:new, :create]
+  resources :sell_leads, only: [:new, :create]
+  resources :keep_leads, only: [:new, :create]
 
   authenticate :user do
-    resources :short_forms, only: [:index, :show, :edit, :update, :destroy]
+    resources :leads, only: [:index, :show, :edit, :update, :destroy]
   end
 
-  get '/confirmation', to: 'short_forms#confirmation'
+  get '/confirmation', to: 'leads#confirmation'
 
-  # resources :short_forms
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

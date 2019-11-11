@@ -7,30 +7,31 @@
     </div>
 
     <p class="subtitle is-3">
-      Do you need to sell your land fast? Are you tired of paying 
-      property taxes on land you don’t have any use for? Do you owe back taxes?
-      Not a problem!
-      Just provide us with some basic information and start getting offers from 
-      interested buyers now! 
-     </p>
+      Do you own land and aren't sure what to do with it?
+    </p>
 
     <div class="columns">
-      <div class="column">
+      <div class="column is-flex">
         <div class="box">
           <h2 class="title is-3">Keep Your Land</h2> 
           <p class="subtitle is-5">
-            We'll provide you with tips Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Are you looking to hold onto your land instead of selling? Whatever your financial situation is,
+            we'll provide you with answers and resources to keep your land in your family. You don't have to sell you don't want to!
           </p>
-          <a href="#" class="button is-primary is-medium">Keep it!</a>
+          <%= link_to "Keep it!", new_keep_lead_path, class: "button is-primary is-medium" %>
         </div>
       </div>
-      <div class="column">
+      <div class="column is-flex">
         <div class="box">
           <h2 class="title is-3">Sell Your Land</h2>
           <p class="subtitle is-5">
-            We'll provide you with tips Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Do you need to sell your land fast? Are you tired of paying 
+            property taxes on land you don’t have any use for? Do you owe back taxes?
+            Not a problem!
+            Just provide us with some basic information and start getting offers from 
+            interested buyers now! 
           </p>
-          <a href="#" class="button is-primary is-medium">Sell it!</a>
+          <%= link_to "Sell it!", new_sell_lead_path, class: "button is-primary is-medium" %>
         </div>
       </div>
     </div>

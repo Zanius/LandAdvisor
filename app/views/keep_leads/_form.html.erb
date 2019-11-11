@@ -1,13 +1,13 @@
 <div class="box">
   <h1 class="title is-3">Tell Us About Your Land!</h1>
 
-  <%= form_with(model: short_form, local: true) do |form| %>
-    <% if short_form.errors.any? %>
+  <%= form_with(model: lead, local: true) do |form| %>
+    <% if lead.errors.any? %>
       <div id="error_explanation" class="has-text-danger">
-        <h2 class="sub-title is-5 is-marginless"><%= pluralize(short_form.errors.count, "error") %> prohibited this short_form from being saved:</h2>
+        <h2 class="sub-title is-5 is-marginless"><%= pluralize(lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
 
         <ul>
-          <% short_form.errors.full_messages.each do |message| %>
+          <% lead.errors.full_messages.each do |message| %>
             <li><%= message %></li>
           <% end %>
         </ul>
@@ -98,7 +98,7 @@
           <%= form.label :parcel_state, class: "label is-medium" %>
           <div class="control has-icons-left">
             <div class="select is-fullwidth is-medium">
-              <%= form.collection_select(:parcel_state, ShortForm.states, :last, :first, include_blank: "Select a State") %>
+              <%= form.collection_select(:parcel_state, Lead.states, :last, :first, include_blank: "Select a State") %>
             </div>
             <span class="icon is-left">
               <i class="fas fa-flag-usa"></i>

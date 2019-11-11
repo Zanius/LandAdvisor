@@ -1,4 +1,4 @@
-class ShortForm < ApplicationRecord
+class Lead < ApplicationRecord
   validates :name, presence: true
   validates :phone, presence: true
   validates :parcel_street, presence: true

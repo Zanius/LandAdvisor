@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lead.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @lead.phone %>
+</p>
+
+<p>
+  <strong>Parcel street:</strong>
+  <%= @lead.parcel_street %>
+</p>
+
+<p>
+  <strong>Parcel street2:</strong>
+  <%= @lead.parcel_street2 %>
+</p>
+
+<p>
+  <strong>Parcel city:</strong>
+  <%= @lead.parcel_city %>
+</p>
+
+<p>
+  <strong>Parcel zip:</strong>
+  <%= @lead.parcel_zip %>
+</p>
+
+<p>
+  <strong>Parcel State:</strong>
+  <%= @lead.parcel_state %>
+</p>
+
+<p>
+  <strong>Parcel county:</strong>
+  <%= @lead.parcel_county %>
+</p>
+
+<%= link_to 'Edit', edit_lead_path(@lead) %> |
+<%= link_to 'Back', leads_path %>

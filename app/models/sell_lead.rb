@@ -1,0 +1,2 @@
+class SellLead < Lead
+end
